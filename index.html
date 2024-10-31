@@ -1,4 +1,4 @@
-f<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -22,11 +22,13 @@ f<!DOCTYPE html>
             text-decoration: none;
             border-radius: 5px;
             margin-top: 20px;
+            cursor: pointer;
         }
         .download-button:hover {
             background-color: #005bb5;
         }
     </style>
+    <script src="download.js"></script> <!-- Link to download.js -->
 </head>
 <body>
     <h1>Finn Extension for YouTube</h1>
@@ -46,7 +48,7 @@ f<!DOCTYPE html>
         <li>Click <strong>Load unpacked</strong> and select the unzipped extension folder.</li>
     </ol>
     
-    <a href="https://github.com/Sjoerd4435/Finnify/archive/refs/heads/main/finnify.zip" class="download-button">Download Extension</a>
+    <button class="download-button" onclick="downloadZip()">Download Extension</button> <!-- Updated download button -->
     
     <h2>How It Works</h2>
     <p>This extension uses JavaScript to replace all instances of text on YouTube with the word "Finn" and overlays a specified image onto each video thumbnail.</p>
